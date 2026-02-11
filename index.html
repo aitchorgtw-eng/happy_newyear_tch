@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 東基公益馬年新春：家庭蒙福聚會</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;900&family=Ma+Shan+Zheng&display=swap');
+        
+        body { 
+            font-family: "Microsoft JhengHei", "微軟正黑體", "Noto Sans TC", sans-serif;
+            background-color: #fffafa; 
+            overflow: hidden; 
+            color: #2d3436;
+        }
+        
+        .title-font {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-weight: 400;
+        }
+
+        .scripture-font {
+            font-family: "KaiTi", "標楷體", serif;
+            font-weight: bold;
+        }
+        
+        .slide { display: none; height: 100vh; width: 100vw; transition: all 0.5s ease-in-out; position: relative; }
+        .active { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        
+        .cute-gradient { 
+            background: linear-gradient(135deg, #e53935 0%, #b71c1c 100%); 
+            color: white; 
+        }
+        
+        .card { 
+            background: rgba(255, 255, 255, 0.98); 
+            border: 4px solid #feca57;
+            border-radius: 40px; 
+            box-shadow: 0 15px 0px #ee5253;
+        }
+
+        .btn-play {
+            background-color: #ff9f43;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-weight: 900;
+            transition: all 0.3s;
+        }
+        .btn-play:hover { background-color: #d32f2f; transform: scale(1.05); }
+
+        .btn-gold { 
+            background-color: #feca57; 
+            color: #8b0000; 
+            font-weight: 900; 
+            border: 2px solid #ff9f43;
+        }
+
+        .badge {
+            background: #ff9f43;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            margin: 4px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .decoration { position: absolute; pointer-events: none; white-space: nowrap; }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Welcome -->
+    <div id="slide1" class="slide active cute-gradient p-6 text-center">
+        <!-- 重新排列的首頁標籤，確保五個機構獨立分開 -->
+        <div class="decoration animate__animated animate__fadeIn" style="top: 5%; left: 5%; font-size: 1.2rem;">🏥 東基醫院</div>
+        <div class="decoration animate__animated animate__fadeIn" style="top: 5%; right: 5%; font-size: 1.2rem;">🌾 一粒麥子</div>
+        <div class="decoration animate__animated animate__fadeIn" style="top: 15%; left: 8%; font-size: 1.2rem;">🏘️ 迦南護理之家</div>
+        <div class="decoration animate__animated animate__fadeIn" style="bottom: 5%; left: 5%; font-size: 1.2rem;">🏠 家立立基金會</div>
+        <div class="decoration animate__animated animate__fadeIn" style="bottom: 5%; right: 5%; font-size: 1.2rem;">👶 哈拿之家</div>
+
+        <div class="animate__animated animate__fadeInDown">
+            <div class="text-9xl mb-4">🐎</div>
+            <p class="text-xl font-bold tracking-widest mb-2 opacity-90">東基公益大家庭</p>
+            <h1 class="text-6xl md:text-8xl title-font mb-6 tracking-widest text-white drop-shadow-lg">東基大家庭馬年行大運</h1>
+            <h2 class="text-3xl md:text-5xl mb-8 bg-yellow-400 text-red-900 py-3 px-8 rounded-full inline-block font-black shadow-lg">「主恩引領 奔向標竿」</h2>
+            <p class="text-2xl font-bold">新春團聚 ‧ 福滿全家</p>
+        </div>
+        <button onclick="nextSlide(2)" class="mt-12 px-12 py-5 btn-gold rounded-full shadow-lg text-2xl hover:scale-105 transition">點我開始聚會 ✨</button>
+    </div>
+
+    <!-- Slide 2: Praise -->
+    <div id="slide2" class="slide p-6">
+        <div class="card p-10 max-w-2xl w-full text-center animate__animated animate__jackInTheBox">
+            <h3 class="text-red-600 text-2xl font-black mb-2">第一站：歡然讚美</h3>
+            <h2 class="text-5xl font-black mb-6 text-red-700 title-font tracking-wider">愛在東基大家庭</h2>
+            
+            <div class="space-y-6 text-left">
+                <div class="bg-red-50 p-6 rounded-3xl border-2 border-red-200">
+                    <p class="mb-4 text-center font-black text-gray-700 text-xl">全家跟著音樂大聲讚美！</p>
+                    <div class="flex justify-center">
+                        <a href="https://www.youtube.com/watch?v=KpvMg3nh0Fo" target="_blank" class="btn-play shadow-lg">
+                            <span>▶️ 點我播放詩歌影片</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-5 bg-orange-50 rounded-2xl">
+                    <p class="text-gray-800 text-lg font-bold">
+                        <b>數算主恩：</b>
+                        正如「一粒麥子」在台灣各角落服務，請分享去年家人在職場、學校或社會中，如何成為別人的祝福？
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-10 flex justify-between items-center">
+                <button onclick="nextSlide(1)" class="text-gray-400 font-bold">⬅️ 返回</button>
+                <button onclick="nextSlide(3)" class="px-10 py-4 bg-red-600 text-white rounded-full font-black shadow-lg text-xl">下一步 ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Scripture -->
+    <div id="slide3" class="slide p-6">
+        <div class="card p-10 max-w-2xl w-full text-center animate__animated animate__fadeIn">
+            <div class="text-6xl mb-4">📖</div>
+            <h3 class="text-red-600 text-2xl font-black mb-2">第二站：真理亮光</h3>
+            <h2 class="text-4xl font-black mb-6 text-red-700">靈力奔跑 永不止息</h2>
+            
+            <div class="bg-red-800 text-white p-8 rounded-3xl mb-6 relative shadow-2xl">
+                <p class="text-2xl leading-relaxed scripture-font">
+                    「但那等候耶和華的，必重新得力。他們必如鷹展翅上騰，他們奔跑卻不困倦，行走卻不疲乏。」
+                </p>
+                <span class="block text-right text-lg mt-4 font-bold opacity-90">— 以賽亞書 40:31</span>
+            </div>
+            
+            <p class="text-gray-700 text-lg font-bold leading-relaxed mb-4">
+                效法東基前輩「哪裡有需要，就往哪裡去」的精神：
+            </p>
+            <div class="flex flex-wrap justify-center gap-1">
+                <span class="badge">台東基督教醫院</span>
+                <span class="badge">一粒麥子基金會</span>
+                <span class="badge">迦南護理之家</span>
+                <span class="badge">家立立基金會</span>
+                <span class="badge">哈拿之家</span>
+            </div>
+
+            <div class="mt-8 flex justify-between">
+                <button onclick="nextSlide(2)" class="text-gray-400 font-bold">⬅️ 返回</button>
+                <button onclick="nextSlide(4)" class="px-10 py-4 bg-red-600 text-white rounded-full font-black shadow-lg text-xl">下一步 ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Interaction -->
+    <div id="slide4" class="slide p-6">
+        <div class="card p-10 max-w-2xl w-full text-center animate__animated animate__bounceIn">
+            <div class="text-7xl mb-6">🧧</div>
+            <h3 class="text-red-600 text-2xl font-black mb-2">第三站：靈籤祝福</h3>
+            <h2 class="text-4xl font-black mb-8 text-red-700">應許紅包 分享愛</h2>
+            
+            <div class="bg-yellow-50 p-8 rounded-3xl border-2 border-yellow-200 text-left">
+                <p class="text-red-900 font-black text-2xl mb-4">🧧 祝福時刻：</p>
+                <p class="text-gray-800 text-xl font-bold leading-loose">
+                    請長輩為家人抽取「經文紅包」。讀出經文時，全家同聲宣告：<br>
+                    <span class="text-red-600 text-2xl font-black">「主恩引領，馬到成功！」</span>
+                </p>
+            </div>
+
+            <div class="mt-10 flex justify-between">
+                <button onclick="nextSlide(3)" class="text-gray-400 font-bold">⬅️ 返回</button>
+                <button onclick="nextSlide(5)" class="px-10 py-4 bg-red-600 text-white rounded-full font-black shadow-lg text-xl">下一步 ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Prayer -->
+    <div id="slide5" class="slide p-6">
+        <div class="card p-10 max-w-2xl w-full text-center animate__animated animate__fadeIn">
+            <div class="text-6xl mb-4">🙏</div>
+            <h3 class="text-red-600 text-2xl font-black mb-2">第四站：同心守望</h3>
+            <h2 class="text-4xl font-black mb-8 text-red-700">全家手牽手 ‧ 為愛代禱</h2>
+            
+            <ul class="text-left space-y-4 mb-6 text-gray-800 text-xl font-bold">
+                <li class="bg-white p-4 rounded-2xl shadow-sm border-l-8 border-red-500">👵 為家中長輩如「迦南」般安穩長壽禱告</li>
+                <li class="bg-white p-4 rounded-2xl shadow-sm border-l-8 border-red-500">❤️ 為家人在「家立立」般溫暖的環境中成長禱告</li>
+                <li class="bg-white p-4 rounded-2xl shadow-sm border-l-8 border-red-500">🩺 特別為東基醫療團隊與偏鄉服事人員春節期間不休息禱告</li>
+            </ul>
+
+            <div class="mt-10 flex justify-between">
+                <button onclick="nextSlide(4)" class="text-gray-400 font-bold">⬅️ 返回</button>
+                <button onclick="nextSlide(6)" class="px-10 py-4 bg-red-600 text-white rounded-full font-black shadow-lg text-xl">結尾祝禱 ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Ending -->
+    <div id="slide6" class="slide cute-gradient p-6 text-center">
+        <div class="animate__animated animate__zoomIn">
+            <h2 class="text-5xl font-black mb-8 title-font">祝禱與賦歸</h2>
+            <div class="bg-white/10 p-10 rounded-3xl mb-10 backdrop-blur-md border-2 border-white/40 shadow-xl">
+                <p class="text-3xl leading-relaxed scripture-font">「願耶和華賜福給你，保護你。<br>願耶和華使祂的臉光照你，賜恩給你。<br>願耶和華向你仰臉，賜你平安。」</p>
+                <p class="mt-6 text-lg font-bold opacity-90">— 民數記 6:24-26</p>
+            </div>
+            <p class="text-4xl font-black text-yellow-300 mb-6">東基公益 ‧ 與您守望 2026</p>
+            <p class="text-xl mb-10 opacity-90">🏥醫院 🌾麥子 🏘️迦南 🏠家立立 👶哈拿</p>
+            <button onclick="nextSlide(1)" class="px-12 py-4 border-4 border-white rounded-full font-black text-2xl hover:bg-white hover:text-red-700 transition">回到首頁 🏠</button>
+        </div>
+    </div>
+
+    <script>
+        function nextSlide(n) {
+            document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+            document.getElementById('slide' + n).classList.add('active');
+        }
+    </script>
+</body>
+</html>
